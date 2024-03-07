@@ -1,0 +1,76 @@
+body {
+    background-image: url("/img&mp3/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.day {
+    display: block;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 100px;
+    width: 120px;
+    height: 50px;
+    border-radius: 0; 
+    border: 2px solid black; 
+    
+}
+
+.day:hover {
+    transform: scale(1.1);
+}
+
+.day.active {
+    background-color: #ffffff; 
+    color: black;
+    border-color: black; 
+
+}
+
+.day.inactive {
+    background-color: #808080; 
+    color: white;
+    border-color: white; 
+}
+
+.box {
+    position: absolute;
+    right: 20%;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    margin-right: 70px;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideUp {
+    to {
+        top: -600px;
+        opacity: 5;
+    }
+}
+
+@keyframes slideDown {
+    to { top: 200px }
+    0% { opacity: 0; }
+    100% { opacity: 5; }
+}
+
+#monday { background-color: #ff6666;}
+#tuesday { background-color: #f69768;}
+#wednesday { background-color: #f8f165;}
+#thursday { background-color: #75f875;}
+#friday { background-color: #70b5fa;}
+#saturday { background-color: #9980ff;}
+#sunday { background-color: #cc99ff; }
